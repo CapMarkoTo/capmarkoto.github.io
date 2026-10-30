@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapMarkoTo — Android & Open Source Developer</title>
+    <style>
+        :root {
+            --bg: #0f0f11;
+            --card: #18181b;
+            --accent: #3b82f6;
+            --text: #e4e4e7;
+            --subtext: #a1a1aa;
+            --border: #27272a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            color: var(--subtext);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .badge-list {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .badge {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: var(--subtext);
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--accent);
+            padding-left: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 1.2rem;
+            border-radius: 8px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .card p {
+            color: var(--subtext);
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .card-tags {
+            font-size: 0.8rem;
+            color: var(--accent);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--subtext);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Шпаков Марк (CapMarkoTo)</h1>
+        <p class="subtitle">Android / Kotlin / C# Разработчик & Open Source Энтузиаст</p>
+        <div class="badge-list">
+            <span class="badge">Kotlin</span>
+            <span class="badge">Android SDK</span>
+            <span class="badge">Jetpack Compose</span>
+            <span class="badge">C#</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Python</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Обо мне</h2>
+        <p>Занимаюсь нативной разработкой под Android и созданием удобных инструментов. Люблю open-source, кастомизацию, оптимизацию и проекты, которые решают реальные задачи без лишней рекламы и трекеров.</p>
+    </section>
+
+    <section>
+        <h2>Проекты</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Расписание КМТ</h3>
+                <p>Открытое Android-приложение для студентов техникума. Без рекламы, с удобным UI и интеграцией с календарем.</p>
+                <div class="card-tags">Kotlin / Jetpack Compose</div>
+            </div>
+
+            <div class="card">
+                <h3>People Nodes (Obsidian Plugin)</h3>
+                <p>Плагин для Obsidian, визуализирующий связи между заметками и контактами в 3D-графе.</p>
+                <div class="card-tags">TypeScript / Three.js</div>
+            </div>
+
+            <div class="card">
+                <h3>Утилиты & Автоматизация</h3>
+                <p>Набор скриптов для парсинга, локальной синхронизации и кастомизации рабочих окружений.</p>
+                <div class="card-tags">Python / Shell / Git</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Контакты</h2>
+        <div class="contact-links">
+            <a href="https://github.com/CapMarkoTo" target="_blank">GitHub</a>
+            <!-- Добавь сюда свой Telegram или Почту по желанию -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© CapMarkoTo. Собрано и развернуто на GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
